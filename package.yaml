@@ -1,0 +1,33 @@
+name:                example-code
+version:             0.0.0.0
+#synopsis:
+description:         Example Libraries
+homepage:            https://github.com/jqpeterson/example-code#readme
+license:             BSD3
+author:              Jeremy Peterson
+maintainer:          jqpeterson
+
+category:            Protocol
+extra-source-files:
+- README.md
+
+dependencies:
+- base >= 4.7 && < 5
+
+library:
+  ghc-options:
+  - -Wall
+  - -Werror
+  source-dirs:      src
+  exposed-modules:
+    - Example.BaseTypes
+    - Example.Monad
+  dependencies:
+    - async
+    - bimap
+    - bytestring
+    - cereal
+    - containers
+    - intervals >= 0.8
+    - text
+    - time
